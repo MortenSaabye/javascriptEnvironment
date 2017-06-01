@@ -1,5 +1,5 @@
 export default function getBaseUrl(){
-   return getParameterByName('usemockapi') ? 'http://localhost:3001/' : '/'
+   return getParameterByName('usemockapi') ? 'http://localhost:3001/' : 'https://stormy-plateau-61467.herokuapp.com/'
 }
 
 function getParameterByName(name, url) {
