@@ -1,16 +1,17 @@
+import './index.css'
 import {getUsers, deleteUser} from './api/userApi'
 
 getUsers().then(res =>  {
 	let userBody = ""
 
 	res.map(user => {
-		const {id, name, username, email} = user
+		const {id, name, userName, email} = user
 		userBody += `
 		<tr>
 			<td><a href="#" data-id="${id}" class="deleteUser">Delete</a></td>
 			<td>${id}</td>
 			<td>${name}</td>
-			<td>${username}</td>
+			<td>${userName}</td>
 			<td>${email}</td>
 		</tr>
 		`
